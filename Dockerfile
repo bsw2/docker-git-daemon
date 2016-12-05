@@ -9,7 +9,7 @@ RUN apt-get update -qq
 RUN apt-get install -qqy git
 
 ADD git-daemon.sh /usr/bin/git-daemon.sh
-VOLUME /git
+VOLUME /opt/git
 
 # git daemon ports
 EXPOSE 9418
